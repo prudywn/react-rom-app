@@ -1,0 +1,163 @@
+/* src/Quotes.css */
+:root {
+  --main-bg-color: white;
+  --main-text-color: #120d0f;
+  --input-bg-color: rgb(255, 228, 225, 0.8);
+  --button-bg-color: #ff4081;
+  --button-hover-bg-color: #e91e63;
+  --favorite-color: #ff4081;
+  --input-border-color: #ccc;
+}
+
+body.dark-mode {
+  --main-bg-color: #121212;
+  --main-text-color: #ff80ab;
+  --input-bg-color: #333;
+  --button-bg-color: #ff80ab;
+  --button-hover-bg-color: #ff4081;
+  --favorite-color: #e50952;
+  --input-border-color: #444;
+}
+
+h1{
+  
+  font-weight:900;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.quotes-container {
+  text-align: center;
+  margin: 20px;
+  max-width: 600px;
+  
+  font-family: 'Times New Roman', Times, serif;
+  color: var(--main-text-color);
+  background-image: url('https://source.unsplash.com/1600x900/?love,romance');
+  background-size: cover;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.quote-display {
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: var(--input-bg-color);
+  border-radius: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.quote-display p {
+  font-size: 1.6em;
+  margin: 0;
+}
+
+.quote-display button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  border: none;
+  background-color: var(--button-bg-color);
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.quote-display button:hover {
+  background-color: var(--button-hover-bg-color);
+}
+
+.input-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  
+}
+
+.input-container input {
+  padding: 10px;
+  width: 70%;
+  border: 1px solid var(--input-border-color);
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+.input-container button {
+  padding: 10px;
+  border: none;
+  background-color: var(--button-bg-color);
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.input-container button:hover {
+  background-color: var(--button-hover-bg-color);
+}
+
+.favorites-toggle {
+  margin-top: 20px;
+  font-size: 18px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid var(--input-border-color);
+  background-color: var(--input-bg-color);
+  margin-top: 10px;
+  border-radius: 4px;
+  font-size: 20px;
+}
+
+li.favorite span {
+  color: var(--favorite-color);
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+}
+
+.icon {
+  cursor: pointer;
+  font-size: 1.2em;
+}
+
+.icon.favorited {
+  color: var(--favorite-color);
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .quotes-container {
+    padding: 10px;
+  }
+
+  .input-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .input-container input {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .input-container button {
+    width: 100%;
+  }
+
+  .quote-display p {
+    font-size: 1.2em;
+  }
+}
