@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/react-rom-app/static/css/main.e819a80d.css",
+    "main.js": "/react-rom-app/static/js/main.4f8cc1ac.js",
+    "index.html": "/react-rom-app/index.html",
+    "main.e819a80d.css.map": "/react-rom-app/static/css/main.e819a80d.css.map",
+    "main.4f8cc1ac.js.map": "/react-rom-app/static/js/main.4f8cc1ac.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e819a80d.css",
+    "static/js/main.4f8cc1ac.js"
+  ]
+}
