@@ -3,7 +3,7 @@ import { getAuth } from "firebase/auth";
 
 
 const firebaseConfig = {
-    apiKey: ACCESS_TOKEN_SECRET,
+    apiKey: process.env.ACCESS_TOKEN_SECRET,
     authDomain: "react-rom.firebaseapp.com",
     projectId: "react-rom",
     storageBucket: "react-rom.appspot.com",
